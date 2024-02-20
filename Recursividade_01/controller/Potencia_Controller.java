@@ -1,4 +1,4 @@
-package controller;
+package Recursividade_01.controller;
 
 public class Potencia_Controller {
 	public Potencia_Controller() {

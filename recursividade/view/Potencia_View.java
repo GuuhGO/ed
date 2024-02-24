@@ -1,5 +1,6 @@
-package Recursividade_01.view;
-import Recursividade_01.controller.Potencia_Controller;
+package ed.recursividade.view;
+
+import ed.recursividade.controller.Potencia_Controller;
 
 public class Potencia_View {
 	public static void main(String[] args) {

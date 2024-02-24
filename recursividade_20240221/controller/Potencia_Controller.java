@@ -1,4 +1,4 @@
-package ed.recursividade.controller;
+package ed.recursividade_20240221.controller;
 
 
 public class Potencia_Controller {

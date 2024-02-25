@@ -1,9 +1,9 @@
-package ed.recursividade_20240221.controller;
 /*2. Criar uma aplicação em Java que tenha uma função recursiva que, recebendo um vetor de inteiros, o
 tamanho do vetor e o valor da última posição do vetor como o primeiro menor valor, retorne o menor
 valor con�do neste vetor.
 O Código deve apresentar, em formato de comentário, como foi definida a condição de parada;
 O Código deve apresentar, em formato de comentário, como foi definida a relação de chamada dos passos;*/
+package ed.recursividade_20240219.controller;
 public class E02_Controller {
 	public E02_Controller() {
 		super();

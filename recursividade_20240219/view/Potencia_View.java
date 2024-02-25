@@ -1,6 +1,6 @@
-package ed.recursividade_20240221.view;
+package ed.recursividade_20240219.view;
 
-import ed.recursividade_20240221.controller.Potencia_Controller;
+import ed.recursividade_20240219.controller.Potencia_Controller;
 
 public class Potencia_View {
 	public static void main(String[] args) {

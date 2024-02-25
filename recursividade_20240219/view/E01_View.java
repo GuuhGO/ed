@@ -1,13 +1,13 @@
-package ed.recursividade_20240221.view;
-
-import java.util.Scanner;
-
-import ed.recursividade_20240221.controller.E01_Controller;
-
 /*1. Criar uma aplicação em Java que tenha uma função recursiva que calcule o somatório do N primeiros
 número NATURAIS (a função deve retornar zero para números nega�vos)
 O Código deve apresentar, em formato de comentário, como foi definida a condição de parada;
 O Código deve apresentar, em formato de comentário, como foi definida a relação de chamada dos passos;*/
+package ed.recursividade_20240219.view;
+
+import java.util.Scanner;
+
+import ed.recursividade_20240219.controller.E01_Controller;
+
 
 public class E01_View {
 	public static void main(String[] args) {

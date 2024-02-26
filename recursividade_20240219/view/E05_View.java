@@ -5,11 +5,11 @@ S = 1 + 1/2 + 1/3 + 1/4 + ... + 1/N
 de parada;
 • O Código deve apresentar, em formato de comentário, como foi definida a relação de
 chamada dos passos;*/
-package ed.recursividade_20240219.view;
+package recursividade_20240219.view;
 
 import java.util.Scanner;
 
-import ed.recursividade_20240219.controller.E05_Controller;
+import recursividade_20240219.controller.E05_Controller;
 
 public class E05_View {
 

@@ -4,11 +4,11 @@ O código deve trazer como comentários:
 A condição de parada
 Como escrever a função para o termo n em função do termo anterior*/
 
-package ed.recursividade_20240219.view;
+package recursividade_20240219.view;
 
 import java.util.Scanner;
 
-import ed.recursividade_20240219.controller.E03_Controller;
+import recursividade_20240219.controller.E03_Controller;
 
 public class E03_View {
 	public static void main(String[] args) {		

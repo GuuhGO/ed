@@ -2,11 +2,11 @@
 número NATURAIS (a função deve retornar zero para números nega�vos)
 O Código deve apresentar, em formato de comentário, como foi definida a condição de parada;
 O Código deve apresentar, em formato de comentário, como foi definida a relação de chamada dos passos;*/
-package ed.recursividade_20240219.view;
+package recursividade_20240219.view;
 
 import java.util.Scanner;
 
-import ed.recursividade_20240219.controller.E01_Controller;
+import recursividade_20240219.controller.E01_Controller;
 
 
 public class E01_View {

@@ -3,9 +3,9 @@ posições, passado como parâmetro:
 O código deve trazer como comentários:
 A condição de parada
 Como escrever a função para o termo n em função do termo anterior*/
-package ed.recursividade_20240219.view;
+package recursividade_20240219.view;
 
-import ed.recursividade_20240219.controller.E04_Controller;
+import recursividade_20240219.controller.E04_Controller;
 
 public class E04_View {
 	public static void main(String[] args) {

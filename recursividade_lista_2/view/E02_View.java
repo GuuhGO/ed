@@ -11,11 +11,19 @@ public class E02_View {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		E02_Controller divSub = new E02_Controller();
-		System.out.print("Informe o dividendo: ");
-		int dividendo = scanner.nextInt();
-		
-		System.out.print("Informe o divisor: ");
-		int divisor = scanner.nextInt();
+		int dividendo;
+		boolean valid = false;
+		int divisor;
+		do {
+			System.out.print("Informe o dividendo: ");
+			dividendo = scanner.nextInt();
+			System.out.print("Informe o divisor: ");
+			divisor = scanner.nextInt();
+			if (divisor > 0 && dividendo > 0)
+				valid = true;
+			else
+				System.out.println("Entradas inválidas, informe valores maiores do que 0");
+		} while (!valid);
 		
 		scanner.close();
 		

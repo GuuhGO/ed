@@ -3,9 +3,9 @@ tamanho do vetor e o valor da última posição do vetor como o primeiro menor v
 valor con�do neste vetor.
 O Código deve apresentar, em formato de comentário, como foi definida a condição de parada;
 O Código deve apresentar, em formato de comentário, como foi definida a relação de chamada dos passos;*/
-package recursividade_20240219.view;
+package recursividade_lista_1.view;
 
-import recursividade_20240219.controller.E02_Controller;
+import recursividade_lista_1.controller.E02_Controller;
 
 
 public class E02_View {

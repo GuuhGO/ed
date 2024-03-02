@@ -3,7 +3,7 @@ posições, passado como parâmetro:
 O código deve trazer como comentários:
 A condição de parada
 Como escrever a função para o termo n em função do termo anterior*/
-package recursividade_20240219.controller;
+package recursividade_lista_1.controller;
 
 public class E04_Controller {
 	public E04_Controller() {

@@ -3,7 +3,7 @@ recursividade, o número de entrada deverá ser baixo para não dar estouro(limi
 O código deve trazer como comentários:
 A condição de parada
 Como escrever a função para o termo n em função do termo anterior*/
-package recursividade_20240219.controller;
+package recursividade_lista_1.controller;
 public class E03_Controller {
 
 	public E03_Controller() {

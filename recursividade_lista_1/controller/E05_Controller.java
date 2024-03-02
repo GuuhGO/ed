@@ -5,7 +5,7 @@ S = 1 + 1/2 + 1/3 + 1/4 + ... + 1/N
 de parada;
 • O Código deve apresentar, em formato de comentário, como foi definida a relação de
 chamada dos passos;*/
-package recursividade_20240219.controller;
+package recursividade_lista_1.controller;
 
 public class E05_Controller {
 	public E05_Controller() {

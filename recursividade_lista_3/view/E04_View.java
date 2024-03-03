@@ -34,10 +34,7 @@ public class E04_View {
 
 		E04_Controller e04 = new E04_Controller();
 		StringBuffer conversao = e04.dec_to_bin(input);
-		int cnvLen = conversao.length();
 		
-		// Inverte a string para exibir o resultado corretamente.
-		conversao = e04.inverterString(conversao, cnvLen - 1, cnvLen);
 		System.out.printf("Resultado da conversão: %s", conversao);
 		scanner.close();
 	}

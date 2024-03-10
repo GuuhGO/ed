@@ -2,7 +2,7 @@ package ordenacao.view;
 
 import ordenacao.controller.Ordenacao_Controller;
 
-public class Ordenação_View {
+public class Ordenacaoo_View {
 
 	public static void main(String[] args) {
 		// int[] array1 = {74, 20, 74, 87, 81, 16, 25, 99, 44, 58};

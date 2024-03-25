@@ -11,11 +11,11 @@ public class ConverteController {
 		PilhaInt pilhaInt = new PilhaInt();
 		StringBuffer buffer = new StringBuffer();
 
-		while (decimal != 0) {
+		do {
 			int resto = (int) decimal % 2;
 			pilhaInt.push(resto);
 			decimal /= 2;
-		}
+		} while (decimal != 0);
 
 		while (!pilhaInt.isEmpty()) {
 			int valor;
@@ -26,6 +26,7 @@ public class ConverteController {
 				System.err.println(e.getMessage());
 			}
 		}
+
 		return buffer.toString();
 	}
 }

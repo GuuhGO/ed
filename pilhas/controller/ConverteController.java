@@ -10,7 +10,6 @@ public class ConverteController {
 	public String decToBin(int decimal) {
 		PilhaInt pilhaInt = new PilhaInt();
 		StringBuffer buffer = new StringBuffer();
-
 		do {
 			int resto = (int) decimal % 2;
 			pilhaInt.push(resto);
@@ -26,7 +25,6 @@ public class ConverteController {
 				System.err.println(e.getMessage());
 			}
 		}
-
 		return buffer.toString();
 	}
 }

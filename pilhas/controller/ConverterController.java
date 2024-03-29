@@ -2,8 +2,8 @@ package pilhas.controller;
 
 import br.com.gustavoguimaraes.pilhas.PilhaInt;
 
-public class ConverteController {
-	public ConverteController() {
+public class ConverterController {
+	public ConverterController() {
 		super();
 	}
 

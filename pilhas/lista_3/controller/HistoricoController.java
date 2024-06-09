@@ -1,25 +1,25 @@
 package pilhas.lista_3.controller;
 
-import br.com.gustavoguimaraes.pilhas.PilhaString;
+import datastructures.genericStack.Stack;
 
 public class HistoricoController {
 	public HistoricoController() {
 		super();
 	}
 
-	public void inserirEndereco(PilhaString p, String url) {
+	public void inserirEndereco(Stack<String> p, String url) {
 		boolean valid = validarUrl(url);
 		if (valid) {
 			p.push(url);
 		}
 	}
 
-	public String removerEndereco(PilhaString p) throws Exception {
+	public String removerEndereco(Stack<String> p) throws Exception {
 		String str = p.pop();
 		return str;
 	}
 
-	public String consultarEndereco(PilhaString p) throws Exception {
+	public String consultarEndereco(Stack<String> p) throws Exception {
 		String str = p.top();
 		if (str == null)
 			throw new Exception("Histórico Vazio");

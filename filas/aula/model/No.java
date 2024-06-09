@@ -10,8 +10,6 @@ public class No {
 		buffer.append("[");
 		buffer.append(dado);
 		buffer.append("]");
-		buffer.append("[");
-		buffer.append("]");
 		return buffer.toString();
 	}
 }

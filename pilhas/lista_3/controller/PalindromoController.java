@@ -1,10 +1,10 @@
 package pilhas.lista_3.controller;
 
-import br.com.gustavoguimaraes.pilhas.PilhaString;
+import datastructures.genericStack.Stack;
 
 public class PalindromoController {
 
-	private PilhaString pilhaStr = new PilhaString();
+	private Stack<String> pilhaStr = new Stack<>();
 
 	public PalindromoController() {
 		super();

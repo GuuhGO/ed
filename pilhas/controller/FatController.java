@@ -1,9 +1,9 @@
 package pilhas.controller;
 
-import br.com.gustavoguimaraes.pilhas.PilhaInt;
+import datastructures.genericStack.Stack;
 
 public class FatController {
-	private PilhaInt pilhaInt = new PilhaInt();
+	private Stack<Integer> pilhaInt = new Stack<>();
 
 	public FatController() {
 		super();

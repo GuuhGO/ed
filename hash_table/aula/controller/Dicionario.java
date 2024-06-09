@@ -1,25 +1,25 @@
 package hash_table.aula.controller;
 
 
-import br.edu.fateczl.lista.listaObj.Lista;
 
+import datastructures.genericList.List;
 import hash_table.aula.model.Palavra;
 
 public class Dicionario {
 	
-	Lista[] tabelaHashDicionario;
+	List<Palavra>[] tabelaHashDicionario;
 	public Dicionario() {
-		tabelaHashDicionario = new Lista[26];
+		tabelaHashDicionario = new List[26];
 		inicializarTabelaHash();
 	}
 	private void inicializarTabelaHash() {
 		int tamanho = tabelaHashDicionario.length;
 		for (int i = 0; i < tamanho; i++) {
-			tabelaHashDicionario[i] = new Lista();
+			tabelaHashDicionario[i] = new List<Palavra>();
 		}
 	}
 	
-	public void adicionarPalavra(Palavra palavra) {
+	public void adicionarPalavra(Palavra palavra) throws Exception {
 		int posicao = palavra.hashCode();
 		tabelaHashDicionario[posicao].addFirst(palavra);
 	}

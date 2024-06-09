@@ -1,8 +1,7 @@
 package pilhas.lista_3.view;
 
 import java.util.Scanner;
-
-import br.com.gustavoguimaraes.pilhas.PilhaInt;
+import datastructures.genericStack.Stack;
 import pilhas.lista_3.controller.NPRController;
 
 public class NPRView {
@@ -12,7 +11,7 @@ public class NPRView {
 	public static void main(String[] args) {
 		boolean running = true;
 		Scanner scanner = new Scanner(System.in);
-		PilhaInt pilhaInt = new PilhaInt();
+		Stack<Integer> intStack = new Stack<>();
 		NPRController npr = new NPRController();
 
 		do {
@@ -20,8 +19,8 @@ public class NPRView {
 			String input = scanner.nextLine();
 			if ("+-*/".contains(input)) {
 				try {
-					int res = npr.npr(pilhaInt, input);
-					npr.insereValor(pilhaInt, res);
+					int res = npr.npr(intStack, input);
+					npr.insereValor(intStack, res);
 					System.out.println("> " + res);
 					printScreen(res, true);
 				} catch (Exception e) {
@@ -34,7 +33,7 @@ public class NPRView {
 				}
 				try {
 					int intInput = Integer.parseInt(input);
-					npr.insereValor(pilhaInt, intInput);
+					npr.insereValor(intStack, intInput);
 					printScreen(intInput, false);
 				} catch (NumberFormatException e) {
 					System.out.printf("Cannot convert Number for string \"%s\"\n", input);

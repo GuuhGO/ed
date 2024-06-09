@@ -1,16 +1,17 @@
 package lista_encadeada.aula;
 
-import lista_encadeada.aula.model.List;
+import datastructures.genericList.List;
 
 public class Main {
-	public static void main(String[] args) throws Exception {
+	
+	public static void main(String[] args) throws Exception {	
 		List<String> l = new List<>();
 		boolean vazia = l.isEmpty();
 		System.out.println(vazia);
 		int size = l.size();
 		System.out.println("Tamanho: " + size);
-		String valor = l.get(0);
 		l.addFirst("C");
+		String valor = l.get(0);
 		l.addFirst("B");
 		l.addFirst("A");
 		l.addLast("D");

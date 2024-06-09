@@ -1,6 +1,6 @@
 package pilhas.lista_3.controller;
 
-import br.com.gustavoguimaraes.pilhas.PilhaInt;
+import datastructures.genericStack.Stack;
 
 public class NPRController {
 
@@ -8,11 +8,11 @@ public class NPRController {
 		super();
 	}
 
-	public void insereValor(PilhaInt p, int valor) {
+	public void insereValor(Stack<Integer> p, int valor) {
 		p.push(valor);
 	}
 
-	public int npr(PilhaInt p, String op) throws Exception {
+	public int npr(Stack<Integer> p, String op) throws Exception {
 		int res = 0;
 		if (p.size() >= 2) {
 			switch (op) {

@@ -1,11 +1,11 @@
 package pilhas.lista_3.controller;
 
-import br.com.gustavoguimaraes.pilhas.PilhaString;
+import datastructures.genericStack.Stack;
 
 public class EX02_Controller {
 	private String start[] = { "W", "L", "H", "B", "R", "G", "J" };
 
-	private PilhaString pilha = new PilhaString();
+	private Stack<String> pilha = new Stack<>();
 
 	public EX02_Controller() {
 		super();
@@ -15,7 +15,7 @@ public class EX02_Controller {
 	}
 
 	public void execute() {
-		PilhaString pilhaAux = new PilhaString();
+		Stack<String> pilhaAux = new Stack<>();
 
 		try {
 			while (!pilha.isEmpty()) {

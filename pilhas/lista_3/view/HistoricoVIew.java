@@ -1,14 +1,13 @@
 package pilhas.lista_3.view;
 
 import java.util.Scanner;
-
-import br.com.gustavoguimaraes.pilhas.PilhaString;
+import datastructures.genericStack.Stack;
 import pilhas.lista_3.controller.HistoricoController;
 
 public class HistoricoVIew {
 
 	public static void main(String[] args) {
-		PilhaString pilhaString = new PilhaString();
+		Stack<String> stringStack = new Stack<>();
 		HistoricoController hist = new HistoricoController();
 		Scanner scanner = new Scanner(System.in);
 		String url;
@@ -29,12 +28,12 @@ public class HistoricoVIew {
 			case 1:
 				System.out.print("\nInsira o endereço: ");
 				url = scanner.nextLine();
-				hist.inserirEndereco(pilhaString, url);
+				hist.inserirEndereco(stringStack, url);
 				System.out.printf("Endereço %s adicionado ao histórico\n", url);
 				break;
 			case 2:
 				try {
-					url = hist.removerEndereco(pilhaString);
+					url = hist.removerEndereco(stringStack);
 					System.out.printf("Endereço %s removido do histórico\n", url);
 				} catch (Exception e) {
 					System.out.println(e.getMessage());
@@ -42,7 +41,7 @@ public class HistoricoVIew {
 				break;
 			case 3:
 				try {
-					url = hist.consultarEndereco(pilhaString);
+					url = hist.consultarEndereco(stringStack);
 					System.out.printf("Último enderço do histórico é %s\n", url);
 				} catch (Exception e) {
 					System.out.println(e.getMessage());

@@ -1,6 +1,6 @@
 package pilhas.controller;
 
-import br.com.gustavoguimaraes.pilhas.PilhaInt;
+import datastructures.genericStack.Stack;
 
 public class ConverterController {
 	public ConverterController() {
@@ -8,7 +8,7 @@ public class ConverterController {
 	}
 
 	public String decToBin(int decimal) {
-		PilhaInt pilhaInt = new PilhaInt();
+		Stack<Integer> pilhaInt = new Stack<>();
 		StringBuffer buffer = new StringBuffer();
 		do {
 			int resto = (int) decimal % 2;

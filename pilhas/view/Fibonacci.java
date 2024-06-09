@@ -1,10 +1,10 @@
 package pilhas.view;
 
-import br.com.gustavoguimaraes.pilhas.PilhaInt;
+import datastructures.genericStack.Stack;
 
 public class Fibonacci {
 	public static void main(String[] args) throws Exception {
-		PilhaInt pilhaInt = new PilhaInt();
+		Stack<Integer> pilhaInt = new Stack<>();
 		while (pilhaInt.top() != 55) {
 			if (pilhaInt.isEmpty()) {
 				pilhaInt.push(1);

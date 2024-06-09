@@ -1,9 +1,9 @@
 package pilhas.lista_3.controller;
 
-import br.com.gustavoguimaraes.pilhas.PilhaInt;
+import datastructures.genericStack.Stack;
 
 public class EX01_Controller {
-	private PilhaInt pilhaInt = new PilhaInt();
+	private Stack<Integer> pilhaInt = new Stack<>();
 
 	public EX01_Controller() {
 		super();

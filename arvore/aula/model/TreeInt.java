@@ -1,5 +1,7 @@
 package arvore.aula.model;
 
+import datastructures.genericStack.Stack;
+
 public class TreeInt {
 	private Node root;
 
@@ -20,26 +22,10 @@ public class TreeInt {
 	}
 
 	public int level() throws Exception {
-		return treeLevel(root);
-
-	}
-
-	private int treeLevel(Node rootSubTree) throws Exception {
-		if (root == null)
-			throw new Exception("treeLevel - Tree is empty");
-		if (rootSubTree.left == null && rootSubTree.right == null) {
-			System.out.println("LEFT: " + rootSubTree.left.data + "\tRIGHT: " + rootSubTree.right.data);
-			return 0;
-		} else if (rootSubTree.left != null) {
-			return 1 + treeLevel(rootSubTree.left);
-		} else if (rootSubTree.left != null) {
-			return 1 + treeLevel(rootSubTree.right);
-		}
-		int lvlR = treeLevel(rootSubTree.right);
-		int lvlL = treeLevel(rootSubTree.left);
-		System.out.println(lvlR);
-		System.out.println(lvlL);
-		return lvlR >= lvlL ? lvlR : lvlL;
+		Stack<Integer> allData = new Stack<Integer>();
+		prefix(root, allData);
+		int data = allData.pop();
+		return nodeLevel(root, data);
 	}
 
 	public void postfixSearch() throws Exception {
@@ -178,6 +164,19 @@ public class TreeInt {
 		}
 		if (rootSubTree.right != null) {
 			prefix(rootSubTree.right);
+		}
+	}
+
+	private void prefix(Node rootSubTree, Stack<Integer> allData) throws Exception {
+		if (root == null) {
+			throw new Exception("prefix - Tree is empty!");
+		}
+		allData.push(rootSubTree.data);
+		if (rootSubTree.left != null) {
+			prefix(rootSubTree.left, allData);
+		}
+		if (rootSubTree.right != null) {
+			prefix(rootSubTree.right, allData);
 		}
 	}
 
